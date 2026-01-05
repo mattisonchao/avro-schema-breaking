@@ -1,0 +1,13 @@
+plugins {
+    id "application"
+}
+
+application {
+    mainClass = "io.github.mattison.Application"
+}
+
+dependencies {
+    implementation("org.apache.avro:avro:1.11.5")
+    implementation("org.apache.avro:avro-protobuf:1.11.5")
+    implementation project(":pojo")
+}
